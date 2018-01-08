@@ -7,9 +7,13 @@ This directory contains a lot of the malicious scripts that can be carried out b
 ### `webbrowser.ino`
 
 __TITLE:__ webbrowser.ino
+
 __AUTHOR:__ Alan @ex0dus-0x
+
 __TARGET-OS:__ Windows XP, Windows 7, Windows 8.x, Windows 10
+
 __DEPENDENCIES:__ WebBrowserPassView.exe (stored in deps)
+
 __DESCRIPTION:__ webbrowser.ino is a malicious script that obtains the WebBrowserPassView
 to "recover" browser clearview passwords in a Window environment. This is
 a quick and efficient hack, as it allows the attacker to steal credentials
@@ -26,6 +30,7 @@ If you would like to contribute to these, please adhere to the following guideli
 `deps`.
 * Test your code!
 * In your script, please include the following as comments in the header:
+
 
     TITLE: [your-malicious-script-name.ino]
     AUTHOR: [your-name-here]
