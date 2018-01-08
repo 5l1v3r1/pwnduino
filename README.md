@@ -26,9 +26,17 @@ After uploading a script, __pwnduino__ will flash your Arduino into a keyboard H
 
 ## Downloading and Installation
 
+First, several requirements are needed. Install with your respective OS's package manager, or build from source.
+
+    sudo apt install arduino arduino-core arduino-mk dfu-programmer python-pip
+    sudo pip install signal pyserial arduino-sketch
+
+Get the repo:
+
     git clone https://github.com/ex0dus-0x/pwnduino
     cd /path/to/pwnduino
-    ./installer
+    python pwnduino.py
+
 
 ## Usage
 

